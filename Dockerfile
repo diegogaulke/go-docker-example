@@ -27,6 +27,4 @@ FROM scratch
 
 COPY --from=builder /go/bin/go-docker-example /go/bin/go-docker-example
 
-# Server port
-
 ENTRYPOINT [ "/go/bin/go-docker-example"]
